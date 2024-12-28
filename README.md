@@ -1,72 +1,52 @@
 # Personal Finance Tracker
 
-## Overview
-
-The **Personal Finance Tracker** is a console-based application designed to help individuals keep track of their income, expenses, and balance their financial life. The project is implemented entirely in Python and follows a clean architecture design.
+## Introduction
+The Personal Finance Tracker is a console-based application aimed at helping users manage their personal finances, track expenses, and ensure budget discipline. It's built using Python and follows a clean architecture design.
 
 ## Features
-- User authentication
-- Income and expense management
-- Budget tracking and warnings
-- Savings goal setting
-- Financial reports
+- User registration and authentication
+- Add, view, and manage expenses and income sources
+- Set budget limits and alerts for overspending
+- Simple command-line interface for smooth interaction
 
-## Technology Stack
-- **Python**: Core programming language used.
-- **SQLite**: Optional for database storage (future expansion)
+## Requirements
+- Python 3.8+
+- Dependencies listed in `package.json` with main ones being:
+  - `python-dotenv`
+  - `bcrypt`
 
-## Directory Structure
-```plaintext
-personal-finance-tracker/
-│   package.json
-│   .gitignore
-│   README.md
-│   .env.example
-│   LICENSE
-│
-└───src/
-    ├───models/
-    │       finance.py
-    ├───repositories/
-    │       finance_repository.py
-    ├───services/
-    │       finance_service.py
-    ├───controllers/
-    │       finance_controller.py
-    └───main.py
-```
-
-## Getting Started
-
-### Prerequisites
-Make sure you have Python 3.6 or later installed on your system.
-
-### Installation
+## Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/personal-finance-tracker.git
+   ```
+2. Navigate into the project directory:
+   ```bash
    cd personal-finance-tracker
    ```
-
-2. Create a virtual environment and activate it:
+3. Create and activate a virtual environment:
    ```bash
-   python -m venv env
-   source env/bin/activate  # On Windows use `env\Scripts\activate`
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
-
-3. Install required dependencies:
+4. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-### Running the Application
-To run the application, execute the following:
-```bash
-python src/main.py
-```
-
-## Contributing
-This project was initially created by **OpenAI API**. Feel free to submit issues and enhancement requests.
+## Usage
+1. Set up your environment variables by copying `.env.example` to `.env` and adding necessary configurations.
+2. Run the application:
+   ```bash
+   python main.py
+   ```
+3. Follow the menu prompts to register, log in, and start tracking your expenses.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more detail.
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+## Credits
+Created with assistance from OpenAI API. Contributions are welcome to enhance functionality and user experience.
+
+## Contributing
+Please read `CONTRIBUTING.md` for details on our code of conduct and the process for submitting pull requests.

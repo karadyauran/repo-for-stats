@@ -1,35 +1,72 @@
-# Habit Tracker Console Application
+# Personal Finance Tracker
 
 ## Overview
-This Habit Tracker is a console-based application designed to help users track and manage their daily habits, analyze progress, and improve consistency. It employs a simple and interactive command-line interface.
+
+The **Personal Finance Tracker** is a console-based application designed to help individuals keep track of their income, expenses, and balance their financial life. The project is implemented entirely in Python and follows a clean architecture design.
 
 ## Features
-- **Habit Management**: Add, edit, and delete habits effortlessly.
-- **Daily Tracking**: Record completion status for each habit daily.
-- **Progress Analysis**: Visualize streaks and completion rates.
-- **Persistence**: Store habits in JSON to retain data across sessions.
+- User authentication
+- Income and expense management
+- Budget tracking and warnings
+- Savings goal setting
+- Financial reports
 
-## Installation
-1. Clone the repository:
-   ```sh
-   git clone <repository-url>
-   cd habit-tracker-console
-   ```
-2. Ensure Python 3.7 or newer is installed.
+## Technology Stack
+- **Python**: Core programming language used.
+- **SQLite**: Optional for database storage (future expansion)
 
-## Usage
-To start the application, run:
-```sh
-python main/main.py
+## Directory Structure
+```plaintext
+personal-finance-tracker/
+│   package.json
+│   .gitignore
+│   README.md
+│   .env.example
+│   LICENSE
+│
+└───src/
+    ├───models/
+    │       finance.py
+    ├───repositories/
+    │       finance_repository.py
+    ├───services/
+    │       finance_service.py
+    ├───controllers/
+    │       finance_controller.py
+    └───main.py
 ```
-Follow the on-screen instructions to manage your habits.
 
-## Configuration
-- Adjust configurations in `config/config.py` or use `.env` for environment-specific settings.
+## Getting Started
 
-## Licensing
-This project is licensed under the MIT License.
+### Prerequisites
+Make sure you have Python 3.6 or later installed on your system.
 
-## Acknowledgements
-Developed with the assistance of OpenAI API. 
-It aims to promote personal growth and productivity.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/personal-finance-tracker.git
+   cd personal-finance-tracker
+   ```
+
+2. Create a virtual environment and activate it:
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows use `env\Scripts\activate`
+   ```
+
+3. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Running the Application
+To run the application, execute the following:
+```bash
+python src/main.py
+```
+
+## Contributing
+This project was initially created by **OpenAI API**. Feel free to submit issues and enhancement requests.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more detail.

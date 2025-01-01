@@ -1,46 +1,42 @@
-# Personal Finance Manager
+# Console Task Manager
 
-## Overview
-The Personal Finance Manager is a console application designed to help users effectively manage their personal finances. This tool allows users to track their expenses and manage their budget efficiently.
+## Project Overview
+This project is a console application designed for task management, utilizing the Pomodoro Technique to enhance productivity. It allows users to add, list, complete, and delete tasks while managing their work sessions through a timer.
 
 ## Features
-1. **User Authentication**: Secure user account creation and login system.
-2. **Expense Tracking**: Log daily expenses with categories and amounts.
-3. **Budgeting**: Set budget limits for specific categories.
-4. **Reports**: Generate reports to summarize spending and budget adherence.
-5. **Data Export**: Export financial data to CSV for further analysis.
+- **Task Management**: Add, view, complete, and delete tasks with descriptions and deadlines.
+- **Pomodoro Timer**: Work and break sessions to promote focused productivity.
+- **Data Persistence**: Tasks are saved to a file to retain data between sessions.
 
 ## Installation
-
-1. **Clone the repository**:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/personal-finance-manager.git
-   cd personal-finance-manager
+   git clone <repository-url>
+   cd console-task-manager
    ```
-
-2. **Setup the environment**:
-   Create a virtual environment and install dependencies (if there are any):
+2. Install dependencies:
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
+   # Ensure you have Python 3.7 or newer installed
+   # This project does not require third-party Python packages
    ```
-
-3. **Environment Variables**:
-   Define environment variables in the `.env` file by copying `.env.example`.
-   ```bash
-   cp .env.example .env
-   ```
-   Modify the necessary configuration details in `.env`.
 
 ## Usage
-Run the application using the command line:
+Start the application by running:
 ```bash
-python3 src/main.py
+python main/main.py
 ```
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Configuration
+- Modify `config/config.py` to change application-wide settings such as the work session and break durations.
 
-## Acknowledgments
-This application was created using the OpenAI API.
+## Development
+- Run the application locally using:
+  ```bash
+  npm run start
+  ```
+
+## License
+This project is licensed under the MIT License.
+
+## Acknowledgements
+Created with the assistance of OpenAI API.

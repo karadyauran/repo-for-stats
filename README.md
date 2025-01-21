@@ -1,54 +1,53 @@
-# Task Manager Console App
+# Personal Finance Manager
 
 ## Overview
-The Task Manager Console App is a simple command-line interface application designed to help users manage their tasks effectively. Users can add, update, delete, and list tasks directly from their console. This project follows clean architecture principles and was created with the help of OpenAI API.
+The Personal Finance Manager is a console application designed to help individuals track their expenses and incomes, manage budgets, and set savings goals effectively.
 
 ## Features
-- Add new tasks with titles, descriptions, and due dates.
-- Update task details or mark them as completed or pending.
-- Delete existing tasks.
-- List all tasks with filtering options.
+- **Expense Tracking:** Log daily expenses with categories and optional tags.
+- **Income Management:** Record various income sources.
+- **Budget Setting:** Define monthly budgets for different categories and get alerts for budget breaches.
+- **Savings Goals:** Set and track progress towards savings goals.
 
 ## Installation
-
-1. **Clone the repository:**
-   ```shell
-   git clone https://github.com/yourusername/task-manager-console-app.git
-   cd task-manager-console-app
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/personal_finance_manager.git
    ```
-
-2. **Ensure you have Python 3.9 or newer:**
-   The application requires Python 3.9 or higher to run.
-
-3. **Set up a virtual environment:**
-   ```shell
-   python3 -m venv venv
+2. Navigate to the project directory:
+   ```bash
+   cd personal_finance_manager
+   ```
+3. Set up the virtual environment and install dependencies:
+   ```bash
+   python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   pip install -r requirements.txt  # Create this file if necessary
    ```
-
-4. **Install dependencies:**
-   There are no external dependencies needed for this project.
 
 ## Usage
-
-Start the application by running:
-```shell
-python main.py
+Run the application using the following command:
+```bash
+python -m personal_finance_manager/main.py
 ```
-Follow the on-screen commands to manage your tasks.
 
-## Project Structure
-- **entities/**: Contains the `Task` entity class.
-- **usecases/**: Hosts the `TaskManager` class that encapsulates the core business logic.
-- **interfaces/**: Defines interfaces such as `TaskRepository` and `OutputBoundary` for dependency inversion.
-- **repositories/**: Implements storage logic with `TaskFileRepository` and `TaskMemoryRepository`.
-- **controllers/**: Contains the `TaskController` class that handles requests from the console.
+For available commands, refer to the help:
+```bash
+python -m personal_finance_manager/main.py --help
+```
+
+## Testing
+To run tests:
+```bash
+python -m unittest discover -s personal_finance_manager/tests
+```
+
+## Contributions
+Feel free to fork the repository and make contributions. Pull requests are welcome and will be reviewed promptly.
 
 ## License
-This project is licensed under the MIT License.
-
-## Author
-Created by [Your Name]. Contributions are welcome! Please submit pull requests and issues on GitHub. 
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ---
-This project was generated using the OpenAI API, emphasizing clean and maintainable code.
+
+This project was created with the help of OpenAI API.
